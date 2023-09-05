@@ -107,11 +107,11 @@ td.days:hover {
 }
 #main_grid td.events,
 #month_grid td.events {
-	 background: rgba(30, 245, 20, 0.1);
+	 background: rgba(23, 110, 245, 0.1);
 }
 #main_grid td.holidays,
 #month_grid td.holidays {
-	 background: rgba(23, 110, 245, 0.1);
+	 background: rgba(30, 245, 20, 0.1);
 }
 #main_grid td.birthdays,
 #month_grid td.birthdays {
@@ -121,12 +121,12 @@ td.days:hover {
 #main_grid td.events:hover,
 #month_grid td.events:hover,
 #month_grid td.calendar_today.events {
-	 background: rgba(30, 245, 20, 0.2);
+	 background: rgba(23, 110, 245, 0.2);
 }
 #main_grid td.holidays:hover,
 #month_grid td.holidays:hover,
 #month_grid td.calendar_today.holidays {
-	 background: rgba(23, 110, 245, 0.2);
+	 background: rgba(30, 245, 20, 0.2);
 }
 #main_grid td.birthdays:hover,
 #month_grid td.birthdays:hover,

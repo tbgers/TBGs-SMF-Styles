@@ -1,3 +1,3 @@
-# Air-SMF
+# Earth-SMF
 
-This is a port of the Air style (the default theme of FluxBB) to a SMF theme.
+This is a port of the Earth style (a part of the Classic Elemental styles of FluxBB) to a SMF theme.
