@@ -326,6 +326,10 @@
 	 .pagelinks {
 		  margin: 0;
 	 }
+	 .moderatorbar .signature {
+	 	  margin-left: 0px;
+	 	  width: 100%;
+	 }
 
 	 /* Profile */
 	 #admin_content .content {
