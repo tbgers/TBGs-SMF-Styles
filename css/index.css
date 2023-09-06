@@ -1,4 +1,15 @@
 /* index.css */
+/*
+TODO: There are still some miscellaneous changes left unimplemented:
+***
+< #punmaint h2, #punredirect h2, #adminconsole .submittop, .pun #debugtime, .pun .pagelink a, .pun .pagelink * {
+---
+> #punmaint h2, #punredirect h2, #adminconsole .submittop, .pun #debugtime, .pun .pagelink * {
+***
+< #punindex #brdmain .blocktable h2, #punindex.subforumlist .blocktable h2, #punsearch #vf h2 {
+---
+> #punindex #brdmain .blocktable h2, #punsearch #vf h2 {
+*/
 /* You can find detailed information at https://wiki.simplemachines.org/smf/Curve2_CSS
 /* Index */
 html {
