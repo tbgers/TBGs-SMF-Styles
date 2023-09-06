@@ -5,6 +5,6 @@ global $settings;
 
 // argument(s): images_url as saved in settings
 $txt['theme_thumbnail_href'] = '%1$s/thumbnail.png';
-$txt['theme_description'] = 'Simulate how FluxBB looks like on Simple Machine Forums.';
+$txt['theme_description'] = 'Simulate how the Fire theme from FluxBB looks like on Simple Machine Forums.';
 
 ?>

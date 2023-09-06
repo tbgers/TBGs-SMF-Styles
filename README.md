@@ -1,3 +1,3 @@
-# Air-SMF
+# Fire-SMF
 
-This is a port of the Air style (the default theme of FluxBB) to a SMF theme.
+This is a port of the Fire style (part of the Classic Elemental theme of FluxBB) to a SMF theme.

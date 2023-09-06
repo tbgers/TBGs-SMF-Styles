@@ -6,7 +6,7 @@ html {
 	 scroll-padding-top: 3rem;
 }
 body {
-	 background: #f6f9fc;
+	 background: #f3f2ed;
 	 /* #e9eef2; */
 	 /*
 	 font: 83.33%/150% "Segoe UI", "Helvetica Neue", "Nimbus Sans L", Arial, "Liberation Sans", sans-serif;
@@ -237,7 +237,7 @@ hr {
 /* This is about links */
 a,
 a:visited {
-	 color: #2365B0; /* #346; */ 
+	 color: #990000; /* #346; */ 
 	 text-decoration: none;
 }
 a:hover {
@@ -380,9 +380,9 @@ blockquote {
 	 margin: 0.75em 1em; /* 0 0 8px 0; */
 	 padding: 0.75em 0.75em 7px 0.75em; /* 6px 10px; */
 	 font-size: 0.85rem;
-	 border: 1px solid #7aadbd;
-	 border-left: 3px solid #7aadbd;
-	 color: #566579;
+	 border: 1px solid #ccc;
+	 border-left: 3px solid #ccc;
+	 color: #665858;
 }
 blockquote cite {
 	 display: block;
@@ -393,7 +393,7 @@ blockquote cite {
 	 margin-bottom: 7px;
 	 padding: 0 ;
 	 line-height: 1.462em;
-	 color: #357082;
+	 color: #836359;
 }
 /*
 blockquote cite::before {
@@ -406,7 +406,7 @@ blockquote cite::before {
 }
 */
 .bbc_standard_quote {
-	 background-color: #f8f9f0;
+	 background-color: #f4f4e8;
 }
 .bbc_alternate_quote {
 	 background-color: #ebf4f8; /* what's this? */
@@ -577,7 +577,7 @@ strong[id^='child_list_']::after {
 }
 .current_page {
 	 padding: 0 4px 0 2px;
-	 color: #2365B0;
+	 color: #990000;
 	 font-family: verdana, sans-serif;
 	 font-weight: bold;
 }
@@ -802,7 +802,7 @@ img.sort,
 	 /* border-radius: 4px; */
 }
 .dropmenu li a {
-	 color: #d4dae2;
+	 color: #ddd;
 }
 /* Level 1 active button. */
 .dropmenu a.active,
@@ -819,7 +819,7 @@ img.sort,
 #top_info > li:hover > a,
 #top_info > li > a:focus,
 #top_info > li > a.open {
-	 background: #b50000; /* #597b9f; */
+	 background: #f60; /* #597b9f; */
 	 /* border: 1px solid #4a6b8c; */
 	 color: #fff;
 	 cursor: pointer;
@@ -841,7 +841,7 @@ img.sort,
 a.mobile_user_menu,
 a[class^="mobile_generic_menu_"] {
 	 display: none;
-	 background: #44699c;
+	 background: #990000;
 	 color: white;
 }
 #main_menu {
@@ -967,7 +967,7 @@ a[class^="mobile_generic_menu_"] {
 	 border-top: solid 1px #ccc;
 	 /* border-radius: 4px; */
 	 box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
-	 background: #ebf1f5;
+	 background: #ecebe7;
 }
 /* Level 2 link background. */
 .dropmenu li li {
@@ -983,7 +983,7 @@ a[class^="mobile_generic_menu_"] {
 .dropmenu li li a {
 	 background: none;
 	 padding: 0 9px;
-	 color: #44699c;
+	 color: #990000;
 	 border: none;
 	 line-height: 2.2em;
 }
@@ -1039,7 +1039,7 @@ a[class^="mobile_generic_menu_"] {
 .dropmenu li li a:focus,
 .dropmenu li li a:hover {
 	 /* color: #333; */
-	 color: #b50000;
+	 color: #f60;
 	 text-decoration: none;
 	 border: 1px solid #cfcfcf;
 	 border-top: 1px solid #d4dee6;
@@ -1128,11 +1128,11 @@ html[lang="el-GR"] .inline_mod_check {
 }
 .button:hover,
 .button:focus {
-	 color: #b50000;/* #af6700; */
+	 color: #f60;/* #af6700; */
 }
 /* the active one */
 .button.active {
-	 background: #44699c;/* #557ea0; */
+	 background: #990000;/* #557ea0; */
 	 color: #fff;
 	 font-weight: bold;
 	 /* border: 1px solid #558080; */
@@ -1141,7 +1141,7 @@ html[lang="el-GR"] .inline_mod_check {
 .button.active:hover,
 .button.active:focus {
 	 /* color: #ffc187; */
-	 background: #b50000;/* #557ea0; */
+	 background: #f60;/* #557ea0; */
 	 box-shadow: none;
 }
 .cat_bar .button {
@@ -1174,7 +1174,7 @@ html[lang="el-GR"] .inline_mod_check {
 #wrapper {
 	 clear: both;
 	 background: #fff;
-	 border: 1px solid #cad7e1;
+	 border: 1px solid #e1d9ca;
 	 /* #b8b8b8; */
 	 border-radius: 8px;
 	 /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.14); */
@@ -1489,7 +1489,7 @@ ul li.greeting {
 	 display: block;
 	 height: auto;
 	 padding: 0 4px;
-	 color: #2365B0; /* #222; */
+	 color: #990000; /* #222; */
 	 /* line-height: 1.375rem; */
 	 border-radius: 0;
 }
@@ -1559,7 +1559,7 @@ ul li.greeting {
 }
 .quickbuttons a:hover,
 .quickbuttons a:focus {
-	 color: #b50000;
+	 color: #f60;
 }
 /* Cancel for hover and/or js access. */
 .quickbuttons ul li:hover a:focus,
@@ -2366,7 +2366,7 @@ screen and (min-resolution: 160dpi) {
 	 left: 0;
 	 bottom: 0;
 	 /* HACK: not a native color: bright color needed*/
-	 background: #a6bbd8; /* #ebf1f5; */
+	 background: #a6bbd8; /* #ecebe7; */
 	 transition: width .3s;
 	 border-radius: 1px;
 	 /* box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.1) inset, 4px 4px 8px rgba(255, 255, 255, 0.3) inset; */
@@ -2981,7 +2981,7 @@ dl.addrules dt.floatleft {
 	 /* border-radius: 7px 7px 3px 3px; */
 	 margin: 0 auto;
 	 padding: 0;
-	 background: #44699c;
+	 background: #990000;
 	 font-size: 0;
 }
 
@@ -3041,7 +3041,7 @@ dl.addrules dt.floatleft {
 	 /* margin: 12px 0 0 0; */
 	 /* padding: 12px 16px; */
 	 border: 1px solid;
-	 border-color: #b9c5ce #d9e1e7;
+	 border-color: #cec7b9 #e7e2d9;
 	 /* border-radius: 6px; */
 	 /* box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1); */
 	 overflow: auto;
@@ -3050,10 +3050,10 @@ dl.addrules dt.floatleft {
 /* ...who? */
 .windowbg,
 .bg.even, .bg.odd {
-	 background: #f6f9fc;
+	 background: #f3f2ed;
 }
 .windowbg[id^=msg] {
-	 background: #fcfdfe;
+	 background: #fbfaf5;
 }
 /*
 .windowbg:nth-of-type(even),
@@ -3219,7 +3219,7 @@ h3 .collapse {
 .info .subject {
 	 font-weight: 600;
 	 font-size: 1.1em;
-	 color: #2365B0;
+	 color: #990000;
 }
 .board_stats {
 	 width: 15%;
@@ -3426,7 +3426,7 @@ span.postby {
 	 
 }
 #poll .windowbg {
-	 border-color: #dfe6ee;
+	 border-color: #ebe0dc;
 }
 /* Poll vote options */
 #poll_options ul.options li {
@@ -3518,20 +3518,20 @@ div#pollmoderation {
 }
 .poster .user_info {
 	 padding: 7px 12px 7px 12px;
-	 background-color: #f6f9fc;
+	 background-color: #f3f2ed;
 	 border-right: 1px solid;
 	 /* border-left: 1px solid; */
-	 border-color: #b9c5ce #d9e1e7;
+	 border-color: #cec7b9 #e7e2d9;
 }
 .poster h4 {
 	 /* HACK: Janky math */
 	 padding: 0.448333em 0 0.448333em 12px;
 	 /* padding: calc(0.538em / 1.2) 0 calc(0.538em / 1.2) 12px; */
 	 font-size: 1.2em;
-	 background-color: #ebf1f5;
-	 border-bottom: 1px solid #cad7e1;
-	 /* border-top: 1px solid #cad7e1;* */
-	 /* border-left: 1px solid #d9e1e7; */
+	 background-color: #ecebe7;
+	 border-bottom: 1px solid #e1d9ca;
+	 /* border-top: 1px solid #e1d9ca;* */
+	 /* border-left: 1px solid #e7e2d9; */
 }
 .poster h4,
 .poster h4 a,
@@ -3540,7 +3540,7 @@ div#pollmoderation {
 .poster h4 a:focus {
 	 /* margin: 0;
 	 padding: 0; */
-	 color: #2365B0; /* #c06002; */
+	 color: #990000; /* #c06002; */
 	 /* line-height: 1.462em; */
 	 
 }
@@ -3623,8 +3623,8 @@ img.avatar {
 }
 .keyinfo {
 	 padding: 0.538em 0 0.538em 18px; /* calc(236px - 218px); */ /* 1px 0 5px 0; */
-	 background-color: #ebf1f5;
-	 border: solid #cad7e1;
+	 background-color: #ecebe7;
+	 border: solid #e1d9ca;
 	 border-width: 0px 0px 1px 0px;
 }
 .keyinfo .subject_title {
@@ -3641,7 +3641,7 @@ img.avatar {
 */
 .keyinfo .postinfo a,
 .keyinfo .postinfo a strong {
-	 color: #2365B0;
+	 color: #990000;
 	 font-size: 1em;
 }
 .keyinfo .postinfo .spacer {
@@ -3671,7 +3671,7 @@ img.avatar {
 	 display: none;
 }
 .page_number {
-	 color: #357082;
+	 color: #836359;
 	 /* font-weight: bold; */
 	 padding: 0 4px; /* 4px 0 */
 	 line-height: 1.5em;
@@ -3729,8 +3729,8 @@ img.smiley {
 	 clear: both;
 	 /*
 	 padding: 0 18px;
-	 border-color: #b9c5ce #d9e1e7;
-	 background: #ebf1f5;
+	 border-color: #cec7b9 #e7e2d9;
+	 background: #ecebe7;
 	 border-style: solid;
 	 border-width: 1px;
 	 padding-bottom: 12px;
@@ -3940,7 +3940,7 @@ ul.post_options li {
 /* General Classes */
 /* Cat_bar / catbg */
 div.cat_bar {
-	 background: #44699c;
+	 background: #990000;
 	 /* 
 	 border-bottom: 1px solid #777;
 	 padding: 0;
@@ -3965,8 +3965,8 @@ div.cat_bar {
 #pick_theme {
 	 padding: 0px 18px 12px 18px;
 	 border: 1px solid;
-	 border-color: #b9c5ce #d9e1e7;
-	 background: #ebf1f5;
+	 border-color: #cec7b9 #e7e2d9;
+	 background: #ecebe7;
 }
 #poll .cat_bar,
 #quickreply .cat_bar,
@@ -4002,7 +4002,7 @@ div.cat_bar {
 #month_grid .cat_bar h3,
 #pick_theme .cat_bar h3 {
 	 text-shadow: none;
-	 color: #357082;
+	 color: #836359;
 	 font-size: 1em;
 	 padding: 0;
 }
@@ -4012,7 +4012,7 @@ div.cat_bar {
 #searchform .cat_bar h3,
 #main_grid .cat_bar a,
 #month_grid .cat_bar a {
-	 color: #357082;
+	 color: #836359;
 }
 #memberlist .cat_bar a:hover {
   text-shadow: none;
@@ -4087,7 +4087,7 @@ h3.catbg .icon {
 	 border: 1px solid #ddd;
 	 /* border-top: 2px solid #ff9400;
 	 border-bottom: 2px solid #bf6900; */
-	 background: #ebf1f5; /* #fff; */
+	 background: #ecebe7; /* #fff; */
 	 color: #666;
 	 /* border-radius: 2px 2px 0 0; */
 	 /* margin: 7px 0; */ /* this might be stupid */
@@ -4375,7 +4375,7 @@ h3.profile_hd::before,
 	 color: #990000; /* red; */
 }
 .blue {
-	 color: #44699c; /* blue; */
+	 color: #990000; /* blue; */
 }
 .green {
 	 color: #2ca100; /* green; */
