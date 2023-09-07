@@ -287,6 +287,9 @@ a.new_posts:visited {
 	 text-decoration: none;
 	 opacity: 1;
 }
+a.new_posts + .preview {
+  font-weight: bold;
+}
 /* Common classes to easy styling.
 ------------------------------------------------------- */
 .floatright {
@@ -4584,21 +4587,14 @@ img.theme_thumbnail {
 	 word-break: break-word;
 }
 /* New addition: can somebody apply DRY here? */
+/* HACK: Something is interfering with these rules */
 .bbc_spoiler {
- 	 margin: 0.75em 1em; /* 0 0 8px 0; */
-	 padding: 6px 10px;
-	 font-size: 1em; /* 0.85rem; */
-	 border: 1px solid #d6dfe2;
-	 border: 1px solid;
-	 border-color: #aca899 #fff #fff #aca899;
-}
-.bbc_spoiler summary {
- 	 display:list-item;
- 	 outline:0;
- 	 cursor:pointer;
- 	 position:relative;
- 	 white-space:nowrap;
-	 margin-bottom: 3px;
+ 	 margin: 0.75em 1em !important; /* 0 0 8px 0; */
+	 padding: 6px 10px !important;
+	 font-size: 1em !important; /* 0.85rem; */
+	 border: 1px solid #d6dfe2 !important;
+	 border: 1px solid !important;
+	 border-color: #aca899 #fff #fff #aca899 !important;
 }
 .bbc_spoiler .spoiler_content {
 	 font-size: 1em; /* 0.85rem; */
