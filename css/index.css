@@ -1,14 +1,30 @@
 /* index.css
-/* A patch of ScratchStyle-SMF to make it look like Oxygen.
+/* A patch of Oxygen-SMF to make it look like Cobalt.
+/*
+TODO: There are still some miscellaneous changes left unimplemented:
+***
+< #adminconsole fieldset td, .pun .blockmenu .box, #adstats dd, #brdfooter #modcontrols {
+---
+> #brdfooter #modcontrols, #adminconsole fieldset td, .pun .blockmenu .box, #adstats dd {
+***
+< .pun table, .pun td, .pun th, .pun input, .pun select, .pun optgroup, .pun textarea, .pun small, .pun samp, .pun legend {
+---
+> .pun table, .pun td, .pun th, .pun input, .pun select, .pun optgroup, .pun textarea, .pun samp, .pun legend {
+***
+> .pun textarea, .pun input, .pun select {
+***
+< #punhelp .codebox, #punhelp .quotebox {
+***
+*/
 /* Index */
 html {
 	 /* background: #3e5a78; */
 	 scroll-padding-top: 3rem;
 }
 body {
-	 background: white;
-	 font: 68.75%/1.4545em Verdana, Helvetica, Arial, sans-serif;
-	 color: #333;
+	 background: #2a2a2a;
+	 font: 68.75%/1.4545em "trebuchet ms", Verdana, Helvetica, Arial, sans-serif;
+	 color: #d4d4d4;
 	 display: flex;
 	 flex-direction: column;
 	 min-height: 100vh;
@@ -42,15 +58,16 @@ input,
 button,
 select,
 textarea {
-	 color: #222;
+	 color: #d4d4d4;
 	 font: 75%/1.4545em "trebuchet ms", Verdana, Helvetica, Arial, sans-serif;
-	 /* background: #fff; */
+	 /* background: #2a2a2a; */
 	 outline: none;
 	 border: 1px solid #bbb;
 	 vertical-align: middle;
 	 /* border-radius: 3px; */
 	 /* box-shadow: 1px 2px 1px rgba(160, 187, 221, 0.2) inset; */
 	 padding: 0.3em 0.4em;
+	 background-color: #2a2a2a;
 }
 input:hover,
 textarea:hover,
@@ -68,7 +85,7 @@ button:focus,
 select:focus {
 	 outline: none;
 	 border-color: #7fb0d8;
-	 background: #fff;
+	 background: #2a2a2a;
 }
 input,
 button,
@@ -163,7 +180,7 @@ fieldset {
 }
 fieldset legend {
 	 font-weight: bold;
-	 color: #555;
+	 color: #d4d4d4; /* #555; */
 	 box-shadow: none;
 	 border: none;
 }
@@ -176,10 +193,10 @@ summary {
 strong,
 .strong {
 	 font-weight: bold;
-	 color: #444;
+	 /* color: #444; */
 }
 .cat_bar strong {
-	 color: #fff;
+	 color: #d4d4d4;
 }
 em,
 .em {
@@ -193,7 +210,7 @@ h4,
 h5,
 h6 {
 	 font-size: 1em;
-	 color: #444;
+	 /* color: #444; */
 }
 /* All input elements that are checkboxes or radio buttons shouldn't have a border around them */
 input[type="checkbox"],
@@ -224,13 +241,13 @@ hr {
 	 border: none;
 	 margin: 12px 0;
 	 height: 2px;
-	 background: #fff;
+	 background: #2a2a2a;
 	 box-shadow: 0 1px 0 #bbb inset;
 }
 /* This is about links */
 a,
 a:visited {
-	 color: #005cb1; /* #333; */
+	 color: #60a0d1; /* #606063; */
 	 text-decoration: none;
 }
 a:hover {
@@ -273,14 +290,14 @@ a.new_posts {
 	 top: -2px;
 	 padding: 0 4px;
 	 background: linear-gradient(#0080d7, #0058b3);
-	 background-color: #006fc9;
-	 color: #fff;
+	 background-color: #565656;
+	 color: #d4d4d4;
 	 font: 9px/15px verdana, sans-serif;
 	 border-radius: 2px;
 	 opacity: 0.8;
 }
 a.new_posts:visited {
-	 color: #fff;
+	 color: #d4d4d4;
 }
 .new_posts:hover,
 .new_posts:focus {
@@ -380,7 +397,7 @@ blockquote {
 	 font-size: 1em; /* 0.85rem; */
 	 border: 1px solid #d6dfe2;
 	 border: 1px solid;
-	 border-color: #aca899 #fff #fff #aca899;
+	 border-color: #606060;
 }
 blockquote cite {
 	 display: block;
@@ -401,18 +418,18 @@ blockquote cite::before {
 */
 .bbc_standard_quote,
 .bbc_spoiler {
-	 background-color: #f9f9f9; /* #e0e6f6; */
+	 background-color: #424242; /* #e0e6f6; */
 }
 .bbc_alternate_quote {
-	 background-color: #f9f9f9; /* #ebf4f8; */
+	 background-color: #424242; /* #ebf4f8; */
 }
 /* A code block - maybe PHP ;). */
 .bbc_code {
 	 display: block;
 	 font-size: 1.182em; /* 0.78rem; */
-	 background: #f9f9f9; /* #f3f3f3; */
+	 background: #424242; /* #f3f3f3; */
 	 border: 1px solid;
-	 border-color: #aca899 #fff #fff #aca899;
+	 border-color: #606060;
 	 /* border-radius: 2px; */
 	 margin: 0.75em 1em; /* 1px 0 6px 0; */
 	 padding: 0.75em; /* 3px 12px; */
@@ -423,7 +440,7 @@ blockquote cite::before {
 /* The "Quote:" and "Code:" header parts... */
 .codeheader,
 .quoteheader {
-	 color: #666;
+	 color: #d4d4d4;
 	 font-size: 0.9em;
 	 padding: 0 2px;
 }
@@ -505,7 +522,7 @@ a img {
 	 margin: 0 5px 0 5px;
 	 border: 1px solid #c5c5c5;
 	 border-radius: 3px;
-	 box-shadow: 0 1px 2px rgba(0, 0, 0, .2), 0 1px 1px #fff inset, 0 -5px 4px rgba(0, 0, 0, .1) inset;
+	 box-shadow: 0 1px 2px rgba(0, 0, 0, .2), 0 1px 1px #2a2a2a inset, 0 -5px 4px rgba(0, 0, 0, .1) inset;
 	 transition: background-color 0.25s;
 }
 .toggle_down::before {
@@ -528,7 +545,7 @@ a img {
 /* Highlighted text - such as search results. */
 .highlight {
 	 font-weight: bold;
-	 color: #005cb1 !important;
+	 color: #60a0d1 !important;
 	 /* font-size: 1.1em; */
 	 background-color: inherit;
 }
@@ -567,7 +584,7 @@ strong[id^='child_list_']::after {
 }
 .current_page {
 	 padding: 0 4px 0 2px;
-	 color: #006fc9;
+	 color: #565656;
 	 font-family: verdana, sans-serif;
 	 font-weight: bold;
 }
@@ -601,7 +618,7 @@ strong[id^='child_list_']::after {
 	 font-weight: bold;
 }
 .warn_moderate {
-	 color: #ffa500;
+	 color: #d4d4da500;
 }
 .warn_watch,
 .success {
@@ -616,7 +633,7 @@ a.moderation_link:visited {
 /* AJAX notification bar
 ------------------------------------------------------- */
 #ajax_in_progress {
-	 background: #fff;
+	 background: #2a2a2a;
 	 border-bottom: 4px solid #f96f00;
 	 color: #f96f00;
 	 text-align: center;
@@ -764,7 +781,7 @@ img.sort,
 .amt {
 	 margin-left: 3px;
 	 padding: 0 5px;
-	 color: #fff;
+	 color: #d4d4d4;
 	 background: #ff6f00; /* #6d90ad; */
 	 border-radius: 8px;
 }
@@ -778,22 +795,23 @@ img.sort,
 }
 /* Needed for new PM notifications. */
 .dropmenu li strong {
-	 color: #333;
+	 color: #606063;
 }
 .dropmenu li a,
 #top_info > li > a {
 	 padding: 0 6px 0 6px;
 	 display: block;
+	 color: #d4d4d4;
 	 /* border: 1px solid transparent; */
 	 /* border-radius: 4px; */
 }
 /* Level 1 active button. */
 /*
 .dropmenu a.active {
-	 color: #fff;
+	 color: #d4d4d4;
 	 font-weight: bold;
 	 border-color: #f49a3a;
-	 background: linear-gradient(#ffae14, #f5a100);
+	 background: linear-gradient(#d4d4dae14, #f5a100);
 	 text-shadow: 0 0 2px #000;
 }
 */
@@ -806,7 +824,7 @@ img.sort,
 #top_info > li > a.open  {
 	 background: #597b9f;
 	 border: 1px solid #4a6b8c;
-	 color: #fff;
+	 color: #d4d4d4;
 	 cursor: pointer;
 	 text-decoration: none;
 	 box-shadow: 0 4px 4px rgba(255, 255, 255, 0.1) inset;
@@ -815,7 +833,7 @@ img.sort,
 */
 .dropmenu > li > a,
 .dropmenu > li > a:focus {
-	 color: #fff;
+	 color: #d4d4d4;
 }
 /* Level 1 active button. */
 /*
@@ -837,7 +855,7 @@ a[class^="mobile_generic_menu_"] {
 }
 /* User information. */
 #profileview {
-	border: 1px solid #006fc9;
+	border: 1px solid #565656;
 	padding: 6px;
 }
 #profile_menu_top::after {
@@ -954,12 +972,12 @@ a[class^="mobile_generic_menu_"] {
 	 min-width: 18.2em;
 	 padding: 0.5em;
 	 font-weight: normal;
-	 border: solid 1px #0066b9;
+	 border: solid 1px #565656;
 	 /* border-left: solid 1px #bbb;
 	 border-top: solid 1px #ccc;
 	 border-radius: 4px;
 	 box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3); */
-	 background: #fff;
+	 background: #565656;
 }
 /* Level 2 link background. */
 .dropmenu li li {
@@ -975,7 +993,7 @@ a[class^="mobile_generic_menu_"] {
 .dropmenu li li a {
 	 background: none;
 	 /* padding: 0 9px; */
-	 color: #333; /* #346; */
+	 /* color: #606063; /* #346; */
 	 border: none;
 	 /* line-height: 2.2em; */
 }
@@ -998,6 +1016,9 @@ a[class^="mobile_generic_menu_"] {
 }
 .top_menu .login input {
 	 width: 90%;
+}
+.top_menu a {
+	 color: #d4d4d4;
 }
 /* Note: The next declarations are for keyboard access with js disabled. */
 .dropmenu ul a:focus,
@@ -1032,7 +1053,7 @@ a[class^="mobile_generic_menu_"] {
 .dropmenu li li a:hover {
 	 color: white;
 	 text-decoration: none;
-	 background: #0066b9;
+	 background: #565656;
 	 /* 
 	 border: 1px solid #cfcfcf;
 	 border-top: 1px solid #d4dee6;
@@ -1103,7 +1124,7 @@ html[lang="el-GR"] .inline_mod_check {
 	 text-transform: capitalize;
 }
 .pagesection .button {
-	 color: #346;
+	 color: #d4d4d4;
 }
 /* Add lines */
 .quickbuttons > li > a {
@@ -1133,16 +1154,16 @@ html[lang="el-GR"] .inline_mod_check {
 */
 /* the active one */
 .button.active {
-	 background: #006fc9;
-	 color: #fff;
+	 background: #565656;
+	 color: #d4d4d4;
 	 /* font-weight: bold; */
 	 /* border: 1px solid #558080; */
 	 /* text-shadow: 0 0 1px #000; */
 }
 .button.active:hover,
 .button.active:focus {
-	 /* color: #ffc187; */
-	 background: #b42000;
+	 /* color: #d4d4dc187; */
+	 background: #ff5010;
 	 /* box-shadow: none; */
 }
 .cat_bar .button {
@@ -1173,7 +1194,7 @@ html[lang="el-GR"] .inline_mod_check {
 /* 
 #wrapper {
 	 clear: both;
-	 background: #fff;
+	 background: #2a2a2a;
 	 border: 1px solid #b8b8b8;
 	 border-radius: 8px;
 	 box-shadow: 0 2px 3px rgba(0, 0, 0, 0.14);
@@ -1194,9 +1215,9 @@ html[lang="el-GR"] .inline_mod_check {
 /* The framing graphics */
 /* The top bar. */
 #top_section {
-	 border-bottom: 1px solid #bbb;
+	 border-bottom: 1px solid #565656; /* #bbb; */
 	 box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
-	 background: #fff;
+	 background: #424242;
 	 clear: both;
 }
 #top_section::after {
@@ -1256,7 +1277,7 @@ h1.forumtitle {
 	 flex: 1 1 auto;
 }
 h1.forumtitle a {
-	 color: #a85400;
+	 color: #fbab5b /* #a85400; */
 	 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 /* Float these items to the right */
@@ -1280,7 +1301,7 @@ img#smflogo {
 	 /* padding: 2px 2px 0 2px; */
 }
 #inner_section {
-	 border: 1px solid #0066b9;
+	 border: 1px solid #565656;
 }
 #inner_section > * {
 	 padding: 0px;
@@ -1296,7 +1317,7 @@ img#smflogo {
 	 display: flex;
 	 justify-content: space-between;
 	 align-items: center;
-	 border-bottom: 1px solid #0066b9;
+	 border-bottom: 1px solid #565656;
 	 /* margin-bottom: 12px; */
 	 padding: 2px 6px;
 }
@@ -1369,7 +1390,7 @@ ul li.greeting {
 	 padding-bottom: 3px;
 	 line-height: 1.1em;
 	 color: #444;
-	 text-shadow: 1px 1px 0 #fff;
+	 text-shadow: 1px 1px 0 #2a2a2a;
 }
 .navigate_section ul li a,
 .navigate_section ul li em {
@@ -1418,7 +1439,7 @@ ul li.greeting {
 #footer p,
 #footer a {
 	 font-size: 0.9em;
-	 color: #fff;
+	 color: #d4d4d4;
 }
 #footer li.copyright {
 	 display: block;
@@ -1508,10 +1529,10 @@ ul li.greeting {
 	 right: -1px;
 	 z-index: 90;
 	 padding: 6px;
-	 background: #fff;
+	 background: #2a2a2a;
 	 font-weight: normal;
 	 text-align: left;
-	 border: solid 1px #006fc9;
+	 border: solid 1px #565656;
 	 /* border-left: solid 1px #aaa;
 	 border-top: solid 1px #bbb; */
 	 /* border-radius: 4px 0 4px 4px;
@@ -1537,7 +1558,7 @@ ul li.greeting {
 	 border-color: #c4cbd3;
 	 */
 	 color: white;
-	 background-color: #0066b9;
+	 background-color: #565656;
 }
 /* Note: The next declarations are for keyboard access with js disabled. */
 .quickbuttons ul li a:focus {
@@ -1683,7 +1704,7 @@ div.move_topic fieldset {
 	 padding: 0.75em;
 }
 #post_area {
-	 /* border: 1px solid #0066b9; */ /* removed because .roundframe has a border now */
+	 /* border: 1px solid #565656; */ /* removed because .roundframe has a border now */
 }
 /* Styles for the report topic/user section. */
 #report_form {
@@ -1736,7 +1757,7 @@ fieldset.merge_options {
 	 /* width: 540px; */
 	 max-width: 100%;
 	 margin: 10px auto;
-	 /* border: 1px solid #0066b9; */ /* removed because .roundframe has a border */
+	 /* border: 1px solid #565656; */ /* removed because .roundframe has a border */
 }
 .popup_content .login {
 	 width: 100%;
@@ -1806,7 +1827,7 @@ dl.register_form dd {
 .coppa_contact {
 	 padding: 4px;
 	 width: 32ex;
-	 background: #fff;
+	 background: #2a2a2a;
 	 color: #222;
 	 margin-left: 5ex;
 	 border: 1px solid #222;
@@ -1815,7 +1836,7 @@ dl.register_form dd {
 	 background: #f5fff0;
 }
 .invalid_input {
-	 background: #fff0f0;
+	 background: #2a2a2a0f0;
 }
 /* Styles for maintenance mode.
 ------------------------------------------------------- */
@@ -2286,8 +2307,12 @@ screen and (min-resolution: 160dpi) {
 	 margin-bottom: 12px;
 	 position: relative;
 }
+.infobox a {
+	 /* color: #d3d3d3; */ /* NOTE: currently the color looks terrible, can someone use something better? */
+}
 .errorbox {
-	 background-color: #fee;
+	 background-color: #545454;
+	 color: #d4d4d4;
 	 border-top: 2px solid #c34;
 	 border-bottom: 2px solid #c34;
 }
@@ -2320,12 +2345,12 @@ screen and (min-resolution: 160dpi) {
 }
 .noticebox {
 	 color: #666;
-	 background: #fff6ca;
-	 border: 1px solid #ffd324;
+	 background: #2a2a2a6ca;
+	 border: 1px solid #d4d4dd324;
 }
 .infobox {
 	 color: #222;
-	 background: #cfc;
+	 background: #686; /* #cfc; */
 	 border: 1px solid green;
 }
 .descbox {
@@ -2338,13 +2363,13 @@ screen and (min-resolution: 160dpi) {
 .generic_bar,
 .progress_bar {
 	 border: 1px solid #cecaca;
-	 background: #fff;
+	 background: #2a2a2a;
 	 min-height: 16px;
 	 line-height: 1.4em;
 	 border-radius: 2px;
 	 position: relative;
 	 overflow: hidden;
-	 color: #333;
+	 color: #d4d4d4; /* #606063; */
 }
 .generic_bar span,
 .progress_bar span {
@@ -2361,7 +2386,7 @@ screen and (min-resolution: 160dpi) {
 	 top: 0;
 	 left: 0;
 	 bottom: 0;
-	 background: #006fc9;
+	 background: #60a0d1;
 	 opacity: 0.5;
 	 transition: width .3s;
 	 border-radius: 1px;
@@ -2384,7 +2409,7 @@ screen and (min-resolution: 160dpi) {
 }
 .progress_bar .bar {
 	 box-shadow: -1px 1px 0 rgba(255, 255, 255, 0.25) inset, 1px -1px 0 rgba(0, 0, 0, 0.1) inset;
-	 background-color: #006fc9;  /* # #00a3ff /* alt */
+	 background-color: #565656;  /* # #00a3ff /* alt */
 	 opacity: 0.5;
 	 background-size: 30px 30px;
 	 background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -2398,7 +2423,7 @@ screen and (min-resolution: 160dpi) {
 	 opacity: 0.5;
 }
 .progress_red .bar {
-	 background-color: rgb(184, 70, 35);  /* # #ff0000 /* alt */
+	 background-color: rgb(184, 70, 35);  /* # #d4d4d0000 /* alt */
 	 opacity: 0.5;
 }
 .progress_blue .bar {
@@ -2471,7 +2496,7 @@ dl.settings img.avatar {
 	 width: 35%;
 	 margin: 0 0 3px 0;
 	 font-weight: bold;
-	 color: #444;
+	 color: #d4d4d4; /* #444; */
 }
 #detailedinfo dd,
 #tracking dd {
@@ -2552,7 +2577,7 @@ dl.settings img.avatar {
 	 padding: 4px 6px;
 	 font-size: 1em; /* 2.2em; */
 	 font-weight: bold;
-	 color: #fff;/* #3f3f3f; */
+	 color: #d4d4d4;/* #3f3f3f; */
 	 float: right;
 }
 #admin_content .counter {
@@ -2563,20 +2588,20 @@ dl.settings img.avatar {
 }
 .topic_details {
 	 padding: 4px 6px; /* 0 4px 4px 4px; */
-	 background-color: #006fc9;
+	 background-color: #565656;
 }
 .topic_details input {
 	 height: initial;
 }
 form#reported_posts .windowbg h5 {
 	 padding: 4px 6px; /* 0 4px 4px 4px; */
-	 background-color: #006fc9;
+	 background-color: #565656;
 }
 .topic_details *,
 .topic_details a,
 form#reported_posts .windowbg h5 *,
 form#reported_posts .windowbg h5 {
-	 color: #fff;
+	 color: #d4d4d4;
 	 font-weight: normal;
 }
 .topic_details hr.clear,
@@ -2590,7 +2615,7 @@ form#reported_posts .windowbg hr {
 	 width: 160px;
 	 float: left;
 	 padding: 6px;
-	 background-color: #f1f1f1;
+	 background-color: #383838;
 	 height: 100%;
 }
 .topic_details + div .half_content {
@@ -2602,7 +2627,7 @@ form#reported_posts .windowbg hr {
 }
 .list_posts {
 	 /* border-top: 1px solid #ddd; */
-	 /* box-shadow: 0 1px 0 #fff inset; */
+	 /* box-shadow: 0 1px 0 #2a2a2a inset; */
 	 /* padding-top: 1em; */
 	 margin: 6px;
 	 clear: both;
@@ -2658,7 +2683,7 @@ form#reported_posts .windowbg hr {
 }
 .boardslist a:hover {
 	 text-decoration: none;
-	 border-bottom: 1px solid #334466;
+	 border-bottom: 1px solid #606064466;
 }
 .boardslist label {
 	 display: inline-block;
@@ -2717,7 +2742,7 @@ form#reported_posts .windowbg hr {
 	 background-color: #75da41;
 }
 .warning_level.watched .bar {
-	 background-color: #ffd800;
+	 background-color: #d4d4dd800;
 }
 .warning_level.moderated .bar {
 	 background-color: orange;
@@ -2823,7 +2848,7 @@ dl.stats {
 }
 dl.addrules dt.floatleft {
 	 width: 15em;
-	 color: #333;
+	 color: #606063;
 	 padding: 0 15px 6px 15px;
 }
 #addrule fieldset {
@@ -2915,8 +2940,8 @@ dl.addrules dt.floatleft {
 }
 #searchform .alt {
 	 border-top: 0;
-	 border-bottom-left-radius: 7px;
-	 border-bottom-right-radius: 7px;
+	 /* border-bottom-left-radius: 7px;
+	 border-bottom-right-radius: 7px; */
 }
 #searchform p.clear {
 	 clear: both;
@@ -2983,8 +3008,8 @@ dl.addrules dt.floatleft {
 	 overflow-wrap: break-word;
 	 max-width: 350px;
 	 padding: 6px 9px;
-	 color: #333;
-	 background: #fff;
+	 color: #606063;
+	 background: #2a2a2a;
 	 border: 1px solid #aaa;
 	 border-radius: 4px;
 	 box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2), 0 0px 10px rgba(0, 0, 0, 0.05) inset;
@@ -3016,7 +3041,7 @@ dl.addrules dt.floatleft {
 	 /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 	 border: 1px solid #777;
 	 border-radius: 7px 7px 3px 3px; */
-	 background-color: #0066b9;
+	 background-color: #565656;
 	 margin: 0 auto;
 	 padding: 2px 0px;
 }
@@ -3074,7 +3099,7 @@ dl.addrules dt.floatleft {
 	 background: #f0f4f7;
 	 margin: 12px 0 0 0;
 	 /* padding: 6px; */
-	 /* border: 1px solid #006fc9; */ /* removed since .roundframe has a border now */
+	 /* border: 1px solid #565656; */ /* removed since .roundframe has a border now */
 	 /* border-radius: 6px; */
 	 /* box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1); */
 	 overflow: auto;
@@ -3083,7 +3108,7 @@ dl.addrules dt.floatleft {
 .windowbg,
 .approvebg,
 .approvebg2 {
-	 border: 1px solid #006fc9;
+	 border: 1px solid #565656;
 }
 /* special case for some boxes to add padding */
 #report_form .windowbg,
@@ -3096,15 +3121,15 @@ dl.addrules dt.floatleft {
 /* Here comes the glory... */
 .windowbg:nth-of-type(even),
 .bg.even {
-	 background: #f1f1f1;
+	 background: #383838;
 }
 .windowbg:nth-of-type(odd),
 .bg.odd {
-	 background: #f1f1f1;
+	 background: #383838;
 }
 /* Highlight the target item */
 .windowbg:target {
-	 background: #ffffe0;
+	 background: #2a2a2afe0;
 }
 /* Add some hover on table rows */
 tr.windowbg:hover {
@@ -3135,7 +3160,7 @@ tr.windowbg:hover {
 }
 /* Unapproved posts in approved topics */
 .windowbg.approvepost {
-	 background: #ffcbcb;
+	 background: #d4d4dcbcb;
 }
 .generic_list_wrapper .additional_row {
 	 margin: 0;
@@ -3166,11 +3191,11 @@ tr.windowbg {
 /* Colors for background of posts requiring approval */
 .approvebg {
 	 color: #222;
-	 background: #ffeaea;
+	 background: #d4d4deaea;
 }
 .approvebg2 {
 	 color: #222;
-	 background: #fff2f2;
+	 background: #2a2a2a2f2;
 }
 div#manage_boards dl dd textarea[name=desc] {
 	 margin-top: 1px;
@@ -3200,7 +3225,7 @@ div#manage_boards dl dd textarea[name=desc] {
 /* BoardIndex */
 /* This place covers board places (boardindex/messageindex/recent) */
 .boardindex_table > div {
-	 border: 1px solid #006fc9;
+	 border: 1px solid #565656;
 }
 .boardindex_table:not(:last-child) {
 	 margin-bottom: 15px;
@@ -3239,14 +3264,14 @@ h3 .collapse {
 	 width: calc(55% - 80px);
 }
 .boardindex_table .board_stats {
-	 background-color: #dedfdf;
-	 border: solid #bbcede;
+	 background-color: #424242;
+	 border: solid #565656;
 	 border-width: 0px 1px;
 	 padding: 5px 0;
 }
 .boardindex_table .board_stats p {
-	 border-left: 1px solid #ddd;
-	 border-right: 1px solid #ddd;
+	 /* border-left: 1px solid #565656; /* #ddd; */
+	 /* border-right: 1px solid #565656; /* #ddd; */
 }
 .info {
 	 overflow: hidden;
@@ -3257,7 +3282,7 @@ h3 .collapse {
 .info .subject {
 	 font-weight: 600;
 	 font-size: 1.1em;
-	 color: #005cb1;
+	 color: #60a0d1;
 }
 .lastpost {
 	 width: 30%;
@@ -3290,7 +3315,7 @@ h3 .collapse {
 }
 .up_contain {
 	 overflow: hidden;
-	 border: 0px solid #bbcede;
+	 border: 0px solid #565656;
 	 border-top-width: 1px;
 	 /* margin: 0 0 3px 0; */
 	 display: flex;
@@ -3321,10 +3346,10 @@ span.postby {
 /* Info Center */
 #info_center {
 	 clear: both;
-	 border: 1px solid #0066b9;
+	 border: 1px solid #565656;
 }
 #info_center .sub_bar {
-	 border-top: 1px solid #ddd;
+	 border-top: 1px solid #565656;
 }
 #info_center .sub_bar:first-child {
 	 border-top: none;
@@ -3404,7 +3429,7 @@ span.postby {
 	 border-radius: 0;
 	 display: flex;
 	 border: 1px solid;
-	 border-color: #0066b9 #0066b9 #bbcede #0066b9;
+	 border-color: #565656 #565656 #565656 #565656;
 }
 #topic_header div {
 	 /* font-weight: bold; */
@@ -3415,11 +3440,11 @@ span.postby {
 	 margin-top: 5px !important;
 }
 #topic_container {
-	 border: solid #0066b9;
+	 border: solid #565656;
 	 border-width: 0 1px 1px 1px;
 }
 #topic_container .windowbg {
-	 border: 1px solid #d1d1d1;
+	 border: 1px solid #484848;
 	 border-top: none;
 	 display: flex;
 	 box-shadow: none;
@@ -3437,8 +3462,8 @@ span.postby {
 	 flex-shrink: 0;
 }
 #topic_container .board_stats {
-	 background-color: #dedfdf;
-	 border: solid #bbcede;
+	 background-color: #383838;
+	 border: solid #565656;
 	 border-width: 0px 1px;
 	 align-self: stretch;
 }
@@ -3562,7 +3587,7 @@ div#pollmoderation {
 .post_wrapper {
 	 position: relative;
 	 min-height: calc(200px + 2em);
-	 background-color: #dedfdf;
+	 background-color: #383838;
 }
 .post_wrapper::after {
 	 content: "";
@@ -3586,7 +3611,7 @@ div#pollmoderation {
 	 bottom: 0px;
 	 margin-top: calc(2em + 4px);
 	 padding: 6px;
-	 background-color: #f1f1f1;
+	 background-color: #424242;
 }
 .poster h4 {
 	 font-size: 1.1em; /* 1.2em; */
@@ -3598,7 +3623,7 @@ div#pollmoderation {
 .poster h4 a:focus {
 	 margin: 0;
 	 padding: 0;
-	 color: #0066b9;
+	 color: #60a0dc; /* #565656; */
 }
 .poster .profile .profile_icons li,
 .poster .im_icons li {
@@ -3658,7 +3683,7 @@ img.avatar {
 	 vertical-align: middle;
 }
 .keyinfo {
-	 background-color: #006fc9;
+	 background-color: #565656;
 	 padding: 4px 6px;
 	 display: table;
 	 width: 100%;
@@ -3696,7 +3721,7 @@ img.avatar {
 }
 .keyinfo .postinfo a,
 .keyinfo .postinfo a strong {
-	 color: #fff;
+	 color: #d4d4d4;
 	 font-size: 1em;
 	 flex: 1 1 auto;
 }
@@ -3704,13 +3729,13 @@ img.avatar {
 	 flex: 1 1 auto;
 }
 .keyinfo .postinfo .modified {
-	 color: #fff; /* #333; */
+	 color: #d4d4d4; /* #606063; */
 	 font-weight: normal;
 	 font-style: italic;
 	 /* padding: 2px 4px 0 4px; */
 }
 .keyinfo .postinfo .modified strong {
-	 color: #fff;
+	 color: #d4d4d4;
 }
 /* PMs postinfo */
 #personal_messages .keyinfo .postinfo {
@@ -3723,14 +3748,14 @@ img.avatar {
 }
 .subject_title a {
 	 font-size: 0.9em;
-	 color: #333;
+	 color: #606063;
 	 font-weight: bold;
 }
 .subject_hidden a {
 	 display: none;
 }
 .page_number {
-	 color: #aabdcd; /* #ad6825; */
+	 color: #a19e9d; /* #ad6825; */
 	 /* font-weight: bold; */
 	 padding: 0px 0 0 8px;
 	 line-height: 1.5em;
@@ -3746,7 +3771,7 @@ img.avatar {
 	 padding: 6px;
 	 margin: 0;
 	 border-top: 1px solid transparent;
-	 /* box-shadow: 0 1px 0 #fff inset; */
+	 /* box-shadow: 0 1px 0 #2a2a2a inset; */
 	 min-height: 85px;
 	 word-wrap: break-word;
 	 /* IE fallback */
@@ -3942,8 +3967,8 @@ ul.post_options li {
 	 overflow: auto;
 	 clear: right;
 	 padding: 6px;
-	 border-top: 1px solid #333;
-	 /* box-shadow: 0 1px 0 #fff inset; */
+	 border-top: 1px solid #606063;
+	 /* box-shadow: 0 1px 0 #2a2a2a inset; */
 	 line-height: 1.4em;
 	 /* font-size: 0.9em; */
 	 max-height: 130px;
@@ -4000,7 +4025,7 @@ ul.post_options li {
 /* General Classes */
 /* Cat_bar / catbg */
 div.cat_bar {
-	 background: #0066b9;
+	 background: #565656;
 	 /* border-bottom: 1px solid #777; */
 	 padding: 0;
 	 /* border-radius: 6px 6px 0 0;
@@ -4016,14 +4041,14 @@ div.cat_bar {
 }
 /* Styles for rounded headers. */
 .cat_bar .desc {
-	 color: #fff;
+	 color: #d4d4d4;
 	 font-size: 12px;
 	 line-height: 1.5em;
 	 font-weight: normal;
 	 margin: -8px 0 4px 8px;
 }
 .cat_bar .desc a {
-	 color: #fff;
+	 color: #d4d4d4;
 	 font-weight: 600;
 }
 h3.catbg {
@@ -4035,7 +4060,7 @@ h3.catbg {
 h3.catbg,
 h3.catbg a,
 h3.catbg a:hover {
-	 color: #fff;
+	 color: #d4d4d4;
 }
 h3.catbg a:hover {
 	 /* text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4); */
@@ -4058,8 +4083,8 @@ h3.catbg .icon {
 .roundframe {
 	 margin: 10px 0 0 0;
 	 /* padding: 12px 16px; */
-	 background: #f1f1f1;
-	 border: 1px solid #006fc9; /* possibly dumb addition, double borders need to be fixed later */
+	 background: #383838;
+	 border: 1px solid #565656; /* possibly dumb addition, double borders need to be fixed later */
 	 /* border: 1px solid #c5c5c5; 
 	 border-radius: 7px;
 	 box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1); */
@@ -4067,26 +4092,27 @@ h3.catbg .icon {
 }
 /* TitleBar & SubBar */
 .title_bar {
-	 /* border: 1px solid #0066b9;
-	 border-top: 2px solid #ff9400;
+	 /* border: 1px solid #565656;
+	 border-top: 2px solid #d4d4d9400;
 	 border-bottom: 2px solid #bf6900; */
-	 background: #d1d1d1;
-	 color: #333; /* #fff; /*
+	 background: #484848;
+	 color: #d4d4d4; /* #606063; /* #2a2a2a; /*
 	 /* border-radius: 2px 2px 0 0; */
 	 /* margin: 5px 0 0 0; */
 	 padding: 4px 0px;
 }
 #info_center .title_bar {
-	 background: #0066b9;
+	 background: #565656;
 }
 .title_bar a {
-	 color: #333;
+	 /* color: #606063; */
+	 color: #d4d4d4;
 }
 .sub_bar {
-	 border-bottom: 1px solid #ddd;
+	 border-bottom: 1px solid #565656;
 	 text-shadow: none;
 	 background: none;
-	 box-shadow: 0 -1px 0 #999 inset;
+	 /* box-shadow: 0 -1px 0 #999 inset; */
 	 clear: both;
 }
 h3.titlebg,
@@ -4096,7 +4122,7 @@ h3.subbg,
 h4.subbg,
 .subbg {
 	 background: none;
-	 /* color: #fff; */
+	 /* color: #d4d4d4; */
 	 /* font-family: "Tahoma", sans-serif; */
 	 font-weight: normal; /* bold; */
 	 overflow: hidden;
@@ -4106,11 +4132,11 @@ h4.subbg,
 .titlebg a,
 .subbg a {
 	 background: none;
-	 color: #555;
+	 color: #d4d4d4; /* #555; */
 	 text-decoration: none;
 }
 #info_center .titlebg a {
-	 color: #fff;
+	 color: #d4d4d4;
 }
 .title_bar + .windowbg,
 .title_bar + .roundframe {
@@ -4121,10 +4147,10 @@ h4.subbg,
 /* Other */
 /* Information */
 .information {
-	 background: #f8f8f8;
+	 background: #383838; /* #f8f8f8; */
 	 overflow: auto;
 	 /* padding-bottom: .5em; */
-	 border: 1px solid #0066b9; /* #ddd; */
+	 border: 1px solid #565656; /* #ddd; */
 	 border-top: none;
 	 /* border-radius: 0 0 7px 7px; */
 	 /* margin: 0 0 10px 0; */
@@ -4169,7 +4195,7 @@ p.information img {
 	 left: 0;
 	 display: none;
 	 margin-top: 18px;
-	 background: #fff;
+	 background: #2a2a2a;
 	 border: 1px solid #ddd;
 	 border-radius: 3px;
 	 box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -4177,17 +4203,17 @@ p.information img {
 	 z-index: 11110 !important;
 }
 .atwho-view .cur {
-	 background: #3366ff;
-	 color: #fff;
+	 background: #6060666ff;
+	 color: #d4d4d4;
 }
 .atwho-view .cur small {
-	 color: #fff;
+	 color: #d4d4d4;
 }
 .atwho-view strong {
-	 color: #3366ff;
+	 color: #6060666ff;
 }
 .atwho-view .cur strong {
-	 color: #fff;
+	 color: #d4d4d4;
 	 font-weight: bold;
 }
 .atwho-view ul {
@@ -4302,22 +4328,22 @@ h3.profile_hd::before,
 .notify_dropdown a:focus {
 	 /* background: initial; */
 	 /* fallback for some browsers */
-	 /* background-image: linear-gradient(#e2e9f3 0%, #fff 70%); */
+	 /* background-image: linear-gradient(#e2e9f3 0%, #2a2a2a 70%); */
 }
 /* Well some of them has different gradient effect on hover */
 /* .button:hover,
 #search_form .button:hover,
 .quickbuttons li:hover {
-	 background: #fff;
-	 background-image: linear-gradient(to bottom, #fff 0%, #e2e9f3 70%);
+	 background: #2a2a2a;
+	 background-image: linear-gradient(to bottom, #2a2a2a 0%, #e2e9f3 70%);
 }
 */
 /* If it fits I sits... */
 /* .navigate_section ul, */
 .popup_content,
 .up_contain {
-	 background: #f1f1f1; /* #fff; */
-	 /* background-image: linear-gradient(to bottom, #fff 0%, #f1f3f5 95%); */
+	 background: #383838; /* #2a2a2a; */
+	 /* background-image: linear-gradient(to bottom, #2a2a2a 0%, #f1f3f5 95%); */
 }
 /* Topic/Board follow-alert menu */
 .notify_dropdown strong {
@@ -4573,6 +4599,22 @@ div.sceditor-container:not(.sceditor-maximize) {
 #attach_current_directory {
 	 word-break: break-word;
 }
+/* Make the post editor dark theme */
+div.sceditor-toolbar {
+  background: #565656 !important;
+  border-bottom: 1px solid #404040 !important;
+}
+.sceditor-container {
+  background: #2a2a2a !important;
+  border: 1px solid #4d4d4d !important;
+}
+.sceditor-container iframe, .sceditor-container textarea {
+  color: #d4d4d4 !important;
+  background: #2a2a2a !important;
+}
+.sceditor-container iframe html {
+  color: #d4d4d4 !important;
+}
 /* Add max-width for theme thumbnails */
 img.theme_thumbnail {
 	 max-width: 250px;
@@ -4589,7 +4631,7 @@ img.theme_thumbnail {
 	 font-size: 1em; /* 0.85rem; */
 	 border: 1px solid #d6dfe2;
 	 border: 1px solid;
-	 border-color: #aca899 #fff #fff #aca899;
+	 border-color: #60606 #2a2a2a #2a2a2a #606060;
 }
 .bbc_spoiler summary {
  	 display:list-item;

@@ -1,5 +1,3 @@
-# Oxygen-SMF
+# Cobalt-SMF
 
-This is a port of the Oxygen style from FluxBB to a SMF theme.
-
-(this is actually a patch of ScratchStyle-SMF but whatever)
+This is a port of the Cobalt style, part of the Modern Elements styles from FluxBB to a SMF theme.

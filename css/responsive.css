@@ -441,7 +441,7 @@
 		  width: 100%;
 		  float: none;
 		  padding: 6px;
-		  background-color: #f1f1f1;
+		  background-color: #383831;
 		  height: 100%;
 	 }
 	 .table_grid.half_content {
@@ -518,11 +518,11 @@
 		  max-height: 90vh;
 		  overflow-x: hidden;
 		  overflow-y: scroll;
-		  border: 1px solid #0066b9;
+		  border: 1px solid #565656;
 	 }
 	 .dropmenu > li > a,
 	 .dropmenu > li > a:focus {
-		  color: #333;
+		  color: #606063;
 	 }
 	 #adm_submenus {
 		  padding: 0;
@@ -543,8 +543,8 @@
 		  display: flex;
 		  align-items: center;
 		  margin: 0 0 4px 0;
-		  background-color: #0066b9;
-		  color: #fff;
+		  background-color: #565656;
+		  color: #2a2a2a;
 		  
 	 }
 	 a[class^="mobile_generic_menu_"] {
@@ -567,12 +567,12 @@
 		  border-left: 0;
 		  border-right: 0;
 		  */
-		  background-color: #f1f1f1;
-		  color: #333;
+		  background-color: #383831;
+		  color: #606063;
 	 }
 	 .dropmenu li, .dropmenu li li {
 		  border: 1px solid ;
-		  border-color: #bbcede #0066b9;
+		  border-color: #56565e #565656;
 	 }
 	 .dropmenu li, .dropmenu li li {
 		  border-width: 1px 0px;
@@ -610,7 +610,7 @@
 		  border-radius: 0;
 		  left: 0;
 		  box-shadow: none;
-		  /* border: 1px solid #0066b9; */
+		  /* border: 1px solid #565656; */
 	 }
 	 /* 3rd level menu tests */
 	 .dropmenu li ul ul {

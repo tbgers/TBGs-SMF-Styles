@@ -5,6 +5,6 @@ global $settings;
 
 // argument(s): images_url as saved in settings
 $txt['theme_thumbnail_href'] = '%1$s/thumbnail.png';
-$txt['theme_description'] = 'Simulate what 2010s Scratch TBGs looks like.<br><i>(not accurate, but we tried)</i>';
+$txt['theme_description'] = 'Simulate how the Cobalt style from FluxBB looks like on Simple Machine Forums.';
 
 ?>

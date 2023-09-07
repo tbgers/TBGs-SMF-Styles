@@ -124,10 +124,10 @@ legend {
 }
 #smfAnnouncements dt {
 	 padding: 4px 6px 2px 6px;
-	 border-top: 2px solid #0066b9;
+	 border-top: 2px solid #565656;
 }
 #smfAnnouncements dt a {
-	 color: #0066b9;
+	 color: #60a0d1;
 	 font-weight: bold;
 	 display: block;
 }
@@ -148,6 +148,7 @@ fieldset.admin_group a {
 	 font-size: 85%;
 	 text-align: center;
 	 vertical-align: top;
+	 color: #d4d4d4;
 }
 fieldset.admin_group .inactive {
 	 opacity: 0.4;
@@ -329,7 +330,7 @@ pre.file_content {
 	 width: 8%;
 }
 .perm_writable {
-	 background-color: #ffbbbb;
+	 background-color: #d4d4dbbbb;
 	 width: 8%;
 }
 .perm_execute {
@@ -476,7 +477,7 @@ span.search_weight {
 	 border-top: 1px solid #cacdd3;
 }
 .perm_groups {
-	 background-color: #fff;
+	 background-color: #2a2a2a;
 }
 .perms {
 	 width: 20px;
@@ -600,7 +601,7 @@ h3.config_hd {
 	 border-color: #71a0c8;
 }
 .move_smileys .selected_item {
-	 border-color: #ffb42d;
+	 border-color: #d4d4db42d;
 }
 /* Progress bars */
 .progress_bar {
