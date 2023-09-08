@@ -2719,7 +2719,7 @@ form#reported_posts .windowbg hr {
 	 float: left;
 }
 #pick_theme .selected {
-	 background: #cddbe6;
+	 background: #60a0d120; /* opacity! */
 }
 /* Signature preview */
 #preview_signature,
