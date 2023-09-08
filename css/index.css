@@ -818,7 +818,7 @@ img.sort,
 /* Level 1 active button. */
 .dropmenu a.active,
 #top_info a.active {
-	 color: #fff;
+	 /* color: #fff; */
 	 font-weight: bold;
 	 /* border-color: #f49a3a;
 	 background: linear-gradient(#ffae14, #f5a100); */
