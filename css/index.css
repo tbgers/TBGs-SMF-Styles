@@ -404,7 +404,7 @@ blockquote cite::before {
 */
 .bbc_standard_quote,
 .bbc_spoiler {
-	 background-color: #f9f9f9; /* #e0e6f6; */
+	 background-color: #f9f9f9 !important; /* #e0e6f6; */
 }
 .bbc_alternate_quote {
 	 background-color: #f9f9f9; /* #ebf4f8; */
@@ -4595,7 +4595,14 @@ img.theme_thumbnail {
 	 border: 1px solid #d6dfe2 !important;
 	 border: 1px solid !important;
 	 border-color: #aca899 #fff #fff #aca899 !important;
+	 border-radius: 0 !important;
+	 box-shadow: initial !important;  
 }
 .bbc_spoiler .spoiler_content {
-	 font-size: 1em; /* 0.85rem; */
+	 font-size: 1em !important; /* 0.85rem; */
+	 background: none !important;
+	 border-radius: 0px !important;
+	 box-shadow: initial !important;
+	 line-height: initial !important;
+	 padding: 0px !important;
 }
