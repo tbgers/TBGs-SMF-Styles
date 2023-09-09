@@ -3147,15 +3147,15 @@ tr.windowbg:hover {
 }
 /* Nobody wants locked topics to stand out much. */
 .windowbg.locked {
-	 background: #e7eaef;
+	 background: #e7eaef40;
 }
 /* Sticky topics get a different background */
 .windowbg.sticky {
-	 background: #cfdce8;
+	 background: #cfdce840;
 }
 /* Locked AND sticky are a bit more technical */
 .windowbg.sticky.locked {
-	 background: #e8d8cf;
+	 background: #e8d8cf40;
 }
 /* Awaiting approval is a bit special, topics first */
 .windowbg.approvetopic {
@@ -3163,7 +3163,7 @@ tr.windowbg:hover {
 }
 /* Unapproved posts in approved topics */
 .windowbg.approvepost {
-	 background: #d4d4dcbcb;
+	 background: #d4d4d4;
 }
 .generic_list_wrapper .additional_row {
 	 margin: 0;
@@ -3465,7 +3465,7 @@ span.postby {
 	 flex-shrink: 0;
 }
 #topic_container .board_stats {
-	 background-color: #383838;
+	 background-color: #424242;
 	 border: solid #565656;
 	 border-width: 0px 1px;
 	 align-self: stretch;
