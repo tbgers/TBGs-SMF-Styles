@@ -50,6 +50,9 @@ function template_init()
 	// Set the following variable to true if this theme requires the optional theme strings file to be loaded.
 	$settings['require_theme_strings'] = false;
 
+	// Define the Theme variants. 
+	$settings['theme_variants'] = array('red','green','blue');
+
 	// Set the following variable to true if this theme wants to display the avatar of the user that posted the last and the first post on the message index and recent pages.
 	$settings['avatars_on_indexes'] = false;
 

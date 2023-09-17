@@ -1,18 +1,10 @@
-# TBGs SMF Themes
+# Metro2
 
-> Meanwhile in an alternate universe where the TBGs runs on Simple Machine Forums...
+Flat, minimalist, and striking in color, this style has a sleek, quick, modern, and refresh look.
 
-This is a collection of SMF themes used to mimic the styles on the TBGs.
+Metro2 is a spiritual successor of MetroGreen, a [FluxBB style](https://web.archive.org/web/20130217173856/http://fluxbb.org/forums/viewtopic.php?id=6372) 
+made by Studio384 that people just love to hate (no offense). Just like how MetroGreen is just the Classic Elements style put on a MDLinator, 
+Metro2 is just Curve2 -- the default style of SMF -- but with the Microsoft Design Language put into it... sort of.
+(please don't tell me the inaccuracies, I haven't daily drived Windows since ages)
 
-## Branching model
-You may have realized that this branch is just the default Curve2 theme. 
-That's because this is the base template for the other branches inheriting from this branch.
-Each branch is a different style, and a branch could inherit another branch
-(which could be useful if you have two same style with only the colors changed) 
-
-This chart may help with the branching model we're using here.
-
-![Image](https://cdn.discordapp.com/attachments/751981476710449232/1116384369263784049/branchful.png "branching model")
-
-Now, is this how you should develop software on a Git enviroment? I... don't recommend it. 
-But hey, this is a theme, not a program. There's no "features" to add, so might as well make all changes hotfixes.
+While I think it still looks kinda jarring, at least it's not as jarring as MetroGreen :)
