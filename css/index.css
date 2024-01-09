@@ -2615,11 +2615,12 @@ form#reported_posts .windowbg hr {
 	 /* margin-left: 25px; */
 }
 .topic_details + div {
-	 width: 160px;
+	 /* width: 160px; */ /* Hotfix from a complaint */
 	 float: left;
 	 padding: 6px;
 	 background-color: #383838;
 	 height: 100%;
+	 margin-left: 0px;
 }
 .topic_details + div .half_content {
 	 height: 50%;
