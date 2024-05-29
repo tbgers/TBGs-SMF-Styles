@@ -1809,8 +1809,6 @@ tr.bg td,
 }
 /* Some lovely generic icons.
 ------------------------------------------------- */
-/* Too much clutter! */
-/* 
 .main_icons::before {
 	content: "";
 	width: 16px;
@@ -1823,9 +1821,7 @@ tr.bg td,
 	background: url(../images/icons/bell.png);
 	background-size: 16px;
 }
-*/
 /* Load better icons for higher resolution screens */
-/*
 @media
 	screen and (-webkit-min-device-pixel-ratio: 1.66),
 	screen and (min-resolution: 160dpi) {
@@ -1836,7 +1832,13 @@ tr.bg td,
 		background-image: url(../images/icons/bell_hd.png);
 	}
 }
-*/
+/* Except on some places where they look hideous. */
+.dropmenu .main_icons,
+.catbg .main_icons,
+.profile_user_links .main_icons,
+#messageindex .main_icons {
+    display: none;
+}
 /* Small fix for topics */
 .quickbuttons .main_icons::before,
 .button .main_icons::before {
