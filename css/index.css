@@ -1870,14 +1870,13 @@ tr.bg td,
 }
 /* Some lovely generic icons.
 ------------------------------------------------- */
-/*
 .main_icons::before {
 	 content: "";
 	 width: 16px;
 	 height: 16px;
 	 display: inline-block;
 	 background: url(../images/icons/main_icons_sprite.png) no-repeat -5px -5px / 260px auto;
-	 background: none;
+	 /* background: none; */ /* Some people really liked the icons */
 	 vertical-align: middle;
 }
 .main_icons.alerts::before {
@@ -1893,9 +1892,14 @@ screen and (min-resolution: 160dpi) {
 .main_icons.alerts::before {
 	 background-image: url(../images/icons/bell_hd.png);
 }
-
-
-
+}
+/* Except at some places where they look hideous */
+.dropmenu .main_icons,
+.catbg .main_icons,
+.profile_user_links .main_icons,
+#messageindex .main_icons, 
+.quickbuttons .main_icons {
+    display: none;
 }
 /* Small fix for topics */
 .quickbuttons .main_icons::before,
