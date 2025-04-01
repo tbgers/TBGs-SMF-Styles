@@ -10,4 +10,5 @@ $txt['theme_description'] = 'Flat, minimalist, and striking in color, this style
 $txt['variant_red'] = 'Red';
 $txt['variant_green'] = 'Green';
 $txt['variant_blue'] = 'Blue';
+$txt['variant_bese'] = 'Bese';
 ?>
