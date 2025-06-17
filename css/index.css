@@ -1877,7 +1877,6 @@ tr.bg td,
 	 height: 16px;
 	 display: inline-block;
 	 background: url(../images/icons/main_icons_sprite.png) no-repeat -5px -5px / 260px auto;
-	 background: none;
 	 vertical-align: middle;
 }
 .main_icons.alerts::before {
